@@ -1,0 +1,784 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "740fea3a-d4a9-4065-8dc0-e82f5bb8c221")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Driver_Motor:L298N"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -10.16 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "L298N"
+				(at 12.7 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-15_P2.54x5.08mm_StaggerOdd_Lead4.58mm_Vertical"
+				(at 1.27 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf"
+				(at 3.81 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "H-bridge motor driver"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?220*StaggerOdd*Vertical*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L298N_0_1"
+				(rectangle
+					(start -12.7 15.24)
+					(end 12.7 -15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "L298N_1_1"
+				(pin input line
+					(at -15.24 12.7 0)
+					(length 2.54)
+					(name "IN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 10.16 0)
+					(length 2.54)
+					(name "IN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 7.62 0)
+					(length 2.54)
+					(name "EnA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 2.54)
+					(name "IN3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 2.54)
+					(name "IN4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 2.54)
+					(name "EnB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -17.78 90)
+					(length 2.54)
+					(name "SENSE_A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -17.78 90)
+					(length 2.54)
+					(name "SENSE_B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 17.78 270)
+					(length 2.54)
+					(name "Vss"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 17.78 270)
+					(length 2.54)
+					(name "Vs"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "OUT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "OUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "OUT3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "OUT4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(wire
+		(pts
+			(xy 72.39 78.74) (xy 93.98 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07855f76-fbae-4325-8381-eb7e70b61667")
+	)
+	(wire
+		(pts
+			(xy 93.98 81.28) (xy 72.39 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "158aa179-5481-46e5-89ba-a1fb278528ae")
+	)
+	(wire
+		(pts
+			(xy 72.39 68.58) (xy 93.98 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2523e861-3ad6-4d2d-a95e-b969bfede825")
+	)
+	(wire
+		(pts
+			(xy 189.23 134.62) (xy 167.64 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3117d46c-bb89-490d-b97d-7eeb1b57964a")
+	)
+	(wire
+		(pts
+			(xy 72.39 83.82) (xy 93.98 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33fe0475-a13f-4098-b994-83b877bec117")
+	)
+	(wire
+		(pts
+			(xy 137.16 132.08) (xy 115.57 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "484c674f-8121-420e-b202-4944c0700bfe")
+	)
+	(wire
+		(pts
+			(xy 124.46 86.36) (xy 146.05 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0c689f-ee93-4d36-982d-ae1654a666e8")
+	)
+	(wire
+		(pts
+			(xy 115.57 129.54) (xy 137.16 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52924dec-b7da-48d5-8c87-34ebf4b1e63b")
+	)
+	(wire
+		(pts
+			(xy 146.05 83.82) (xy 124.46 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68478bb5-7f70-459f-9f91-d1fb43367282")
+	)
+	(wire
+		(pts
+			(xy 115.57 121.92) (xy 137.16 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73e2a385-65c2-4253-a880-fe82da6fcdf4")
+	)
+	(wire
+		(pts
+			(xy 72.39 71.12) (xy 93.98 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7829f970-8ab4-4aa4-8b25-f1fadca9ea6b")
+	)
+	(wire
+		(pts
+			(xy 167.64 129.54) (xy 189.23 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d09ee22-6a1f-4f05-88de-02fed43f152a")
+	)
+	(wire
+		(pts
+			(xy 115.57 134.62) (xy 137.16 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b1e9788-f620-48c6-a0b2-6ec6c19c1b4d")
+	)
+	(wire
+		(pts
+			(xy 167.64 137.16) (xy 189.23 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b8f12d9-6442-4993-9c44-6ce2c2ef7040")
+	)
+	(wire
+		(pts
+			(xy 124.46 78.74) (xy 146.05 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cddeb46-12cf-405d-a0e6-8e8959524626")
+	)
+	(wire
+		(pts
+			(xy 72.39 73.66) (xy 93.98 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b22b8635-c1d9-44c9-8e98-30893953532d")
+	)
+	(wire
+		(pts
+			(xy 146.05 76.2) (xy 124.46 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7c9ad1b-8888-438e-98f1-958e60967d72")
+	)
+	(wire
+		(pts
+			(xy 189.23 127) (xy 167.64 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ced03f05-f76c-49b8-a2d2-2ad10e82c10c")
+	)
+	(wire
+		(pts
+			(xy 115.57 124.46) (xy 137.16 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d29ca3e3-23c5-41f6-b2b9-ce118c99927b")
+	)
+	(wire
+		(pts
+			(xy 115.57 119.38) (xy 137.16 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e58bc0c2-f8b5-40c5-896e-715079ba2e2f")
+	)
+	(symbol
+		(lib_id "Driver_Motor:L298N")
+		(at 109.22 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02470ee2-b437-41f3-a419-e7c00616d965")
+		(property "Reference" "U2"
+			(at 113.9033 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "L298N"
+			(at 113.9033 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-15_P2.54x5.08mm_StaggerOdd_Lead4.58mm_Vertical"
+			(at 110.49 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf"
+			(at 113.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V"
+			(at 109.22 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5ce573ec-c273-468b-931c-6a941987c42e")
+		)
+		(pin "3"
+			(uuid "7693732d-0f66-44bd-9905-1fb6b18ac69c")
+		)
+		(pin "9"
+			(uuid "35be3b91-5f83-4c59-a287-b954cb42c9d7")
+		)
+		(pin "11"
+			(uuid "521bf9f9-06b3-4fc7-ad21-fa5f74a8457c")
+		)
+		(pin "5"
+			(uuid "6cf63c45-80c8-42ad-bd6b-07fc82d89578")
+		)
+		(pin "10"
+			(uuid "34ad6c1b-4dc7-4a8f-9dee-06e2c7d305cc")
+		)
+		(pin "12"
+			(uuid "e0d58c8d-a121-4d4f-be2f-61bc913c17b3")
+		)
+		(pin "15"
+			(uuid "c7f9ee91-8018-4617-97f5-9c811278a9ec")
+		)
+		(pin "8"
+			(uuid "e6b87324-ebe7-443e-a58f-8e42759bf360")
+		)
+		(pin "4"
+			(uuid "eda760bf-2127-40f4-b4b8-f6e01dc7c631")
+		)
+		(pin "13"
+			(uuid "daca3a33-8e1c-426c-870a-7fa7d4d59f75")
+		)
+		(pin "1"
+			(uuid "846cbc02-0728-48f9-bfa8-ad151c4acd0e")
+		)
+		(pin "14"
+			(uuid "13b76bdd-2e36-437c-80fe-6ab741da5dbe")
+		)
+		(pin "6"
+			(uuid "2676e022-3c11-40cb-8fcd-0e0c638044df")
+		)
+		(pin "7"
+			(uuid "f74d94eb-b0fc-40c1-ba46-4d5ddddf2a44")
+		)
+		(instances
+			(project "electrical_integration"
+				(path "/3067e7b3-106e-4006-aca4-cb72b40521a2/f046fb82-27c6-4427-91d4-319353fa1983"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_Motor:L298N")
+		(at 152.4 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c82fb242-3934-4d58-b8c6-acfcbbd59501")
+		(property "Reference" "U3"
+			(at 157.0833 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "L298N"
+			(at 157.0833 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-15_P2.54x5.08mm_StaggerOdd_Lead4.58mm_Vertical"
+			(at 153.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf"
+			(at 156.21 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V"
+			(at 152.4 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "2f1f2e70-06fd-4628-a483-0a0ac6eb0ef1")
+		)
+		(pin "4"
+			(uuid "7f086971-cba2-499a-b9eb-e18180c92002")
+		)
+		(pin "5"
+			(uuid "5d35c920-52d4-4cbc-9644-e9d9c34279ee")
+		)
+		(pin "9"
+			(uuid "a0e645b3-b28f-4120-8ec1-b73b3c929d97")
+		)
+		(pin "2"
+			(uuid "46aed4b4-00d0-43ac-bece-816bbd5d5415")
+		)
+		(pin "11"
+			(uuid "db474a28-fc8f-4cc1-9f64-c7ae7b0f2f9b")
+		)
+		(pin "15"
+			(uuid "7dcb5f7c-8b9a-4a5c-bec5-8a1b94bd809b")
+		)
+		(pin "6"
+			(uuid "43c0da9e-aa9c-4abb-bc37-3234b2a745ec")
+		)
+		(pin "1"
+			(uuid "4805a050-a917-4ca2-9eb6-8f4b12a6d6b7")
+		)
+		(pin "8"
+			(uuid "b73e5986-2813-45c4-b64a-c25e2e8f3420")
+		)
+		(pin "12"
+			(uuid "aea80938-3e6d-49e3-9c5f-6adfaac70735")
+		)
+		(pin "14"
+			(uuid "aefcee32-148b-47b0-8c73-57f6c370857a")
+		)
+		(pin "10"
+			(uuid "b114cee2-f908-464c-b5e2-3053e19378d0")
+		)
+		(pin "3"
+			(uuid "5771fa4b-1bca-4ac0-922e-cd0472104020")
+		)
+		(pin "13"
+			(uuid "edba5f8a-d88d-4fe0-9ed6-a1265f2e2573")
+		)
+		(instances
+			(project "electrical_integration"
+				(path "/3067e7b3-106e-4006-aca4-cb72b40521a2/f046fb82-27c6-4427-91d4-319353fa1983"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
